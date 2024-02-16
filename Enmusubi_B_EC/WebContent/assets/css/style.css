@@ -1,0 +1,195 @@
+body {
+	background-image: url("../img/background.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+/*background-color: #FFFFF0;*/
+
+.logo {
+  font-size: 24px;
+}
+
+#popup {
+  display: none;
+  /* label でコントロールするので input は非表示に */
+}
+
+.popup1 {
+  width: 100px;
+  height: 25px;
+  margin: 20 auto;
+  padding: 5px;
+  /* borderに関する設定 */
+  border: 1px solid; /* 線の太さと可視化 */
+  border-radius: 4px; /* 角丸に */
+  background-color: #d8d6cd;
+}
+
+.popup-open {
+  cursor: pointer;
+  /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+}
+
+.popup-overlay {
+  display: none;
+  /* input にチェックが入るまでは非表示に */
+}
+
+#popup:checked~.popup-overlay {
+  display: block;
+  z-index: 99999;
+  background-color: #00000070;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.popup-window {
+  width: 90vw;
+  max-width: 560px;
+  padding: 20px;
+  background-color: #fffff0;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-text {
+  margin: 0;
+  padding: 20px;
+}
+
+.popup-text:not(:last-of-type) {
+  margin-bottom: 1em
+}
+
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  top: -26px;
+  right: 0;
+}
+
+.popup-main {
+  text-align: left;
+  margin: 0;
+  padding: 10px 130px;
+}
+
+header {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #001f3f;
+  color: #F8F8FF;
+}
+
+h1 {
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.nav_content {
+  text-align: left;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  /* 横並び */
+  list-style: none;
+  width: 10%;
+  /* ここで項目の幅を指定します */
+  background-color: #e3d7a3;
+  /* 背景色を指定します */
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+nav ul li a {
+  margin: 5px 20px;
+  text-decoration: none;
+  color: #0F0F0F;
+  /* 文字色を指定します */
+}
+
+nav li:hover {
+  opacity: 0.8;
+  /* hover時の不透明度を調整します */
+}
+
+.btn_02 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  margin: auto;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  border: 2px solid #FDF1FF;
+  background: #FDF1FF;
+  color: #333;
+  transition: 0.5s;
+}
+
+.btn_02:hover {
+  color: #333;
+  background: #eccaf1;
+}
+
+.Item_img {
+  max-width: 250px;
+  min-width: 100px;
+}
+
+
+.ItemCardList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 80px;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.ItemCard {
+  margin: 0 auto;
+  background-color: #d8d6cd;
+  margin: 0;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 400px;
+  text-align: left;
+  border: 1px solid; /* 線の太さと可視化 */
+  border-radius: 4px; /* 角丸に */
+  
+}
+
+.msg {
+  color: red;
+}

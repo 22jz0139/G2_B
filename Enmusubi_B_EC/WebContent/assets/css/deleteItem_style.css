@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+body {
+background-image: url("../img/background.jpg");
+  padding: 0;
+  margin: 0;
+}
+
+
+header {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #001f3f;
+  color: #F8F8FF;
+}
+
+h1 {
+	padding: 15px 20px;
+	margin: 0;
+}
+
+.nav_content {
+  text-align: left;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  /* 横並び */
+  list-style: none;
+  width: 10%;
+  /* ここで項目の幅を指定します */
+  background-color: #e3d7a3;
+  /* 背景色を指定します */
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+nav ul li a {
+  margin: 5px 20px;
+  text-decoration: none;
+  color: #0F0F0F;
+  /* 文字色を指定します */
+}
+
+nav li:hover {
+  opacity: 0.8;
+  /* hover時の不透明度を調整します */
+}
+
+.btn_02 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  margin: auto;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  border: 2px solid #FDF1FF;
+  background: #FDF1FF;
+  color: #333;
+  transition: 0.5s;
+}
+
+.btn_02:hover {
+  color: #333;
+  background: #eccaf1;
+}
+
+.deleteItemList {
+  background-color: #d8d6cd;
+  padding: 20px 40px;
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid; /* 線の太さと可視化 */
+  border-radius: 4px; /* 角丸に */
+}
+
+.deleteItem {
+  list-style: none;
+  text-align: center;
+}
+
+h2 {
+	color: red;
+}
+.msg {
+  color: red;
+}
+
+.button2 {
+  margin: 10px;
+}

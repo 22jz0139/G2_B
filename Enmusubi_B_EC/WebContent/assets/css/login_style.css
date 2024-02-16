@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body {
+	background-color: #FFFFF0;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	display:block;
+  	justify-content: space-between;
+  	align-items: center;
+  	padding: 0;
+  	margin: 0;
+ 	background-color: #001f3f;
+ 	color: #F8F8FF;
+}
+
+nav {
+	text-align: left;
+	padding: 5px 10px;
+	margin: 0;
+}
+ 
+nav ul {
+    margin: 0 ;
+    padding: 0 ;
+}
+ 
+nav ul li{
+	display: inline; /* 横並び */
+    list-style: none;
+    width: 10%; /* ここで項目の幅を指定します */
+    background-color: #e3d7a3; /* 背景色を指定します */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+ 
+nav ul li a {
+	margin: 5px 20px;
+    text-decoration: none;
+    color: #F8F8FF; /* 文字色を指定します */
+}
+ 
+nav li:hover{
+    opacity: 0.8; /* hover時の不透明度を調整します */
+}
+
+
+/*-------------------------------------*/
+
+main {
+	background-color: #FFFDD0;
+	margin: 0;
+    padding: 0;
+}
+
+
+ul {
+	display: inline;
+	margin: 0;
+}
+
+.OrderCardList {
+	list-style: none;
+  	gap: 80px;
+  	border-radius: 5px;
+  	text-align: center;
+  	margin: 50px;
+  	
+}
+.OrderCard {
+ 	height: 150px;
+ 	margin: 0 auto;
+  	background-color: #e3d7a3;
+  	max-width: 800px;
+  	min-width: 400px;
+  	border-radius: 3px; /* 角丸に */
+}
+.Item_img {
+  max-width: 250px;
+  min-width: 150px;
+}
